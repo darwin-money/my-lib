@@ -5,8 +5,8 @@
 }
 body{
     font-family:  sans-serif;
-    background: rgb(34,193,195);
-background: linear-gradient(346deg, rgba(34,193,195,1) 0%, rgba(237,17,69,1) 40%, rgba(45,91,253,1) 100%);
+    background: rgb(17,36,133);
+background: linear-gradient(90deg, rgba(17,36,133,1) 0%, rgba(134,63,143,1) 21%, rgba(59,12,121,1) 40%, rgba(16,18,176,1) 73%, rgba(19,78,131,1) 82%, rgba(16,76,131,1) 90%, rgba(6,70,65,1) 100%);
 }
 /* header */
 .header{
@@ -31,6 +31,10 @@ a{
     text-decoration: none;
     font-weight: 700;
     font-size: 1.5rem;
+}
+.nav-logo h1{
+    font-size: 3.0rem;
+    letter-spacing: 1px;
 }
 /* nav link styling */
 .nav-link ul{
@@ -118,19 +122,27 @@ padding-top: 100px;
     flex-basis: 50%;
 }
 .about-text h1{
-   color: mistyrose;
+   color: rgb(11, 15, 1);
    font-size:2rem;
-   letter-spacing: 4px;
+   letter-spacing: 1px;
    margin-bottom: 5px;
+   font-size: 3.0rem;
 }
 .about-text h3{
-    color:blue;
-    margin-bottom: 70px;
+    color:rgb(222, 222, 231);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
 }
 .about-text p{
-    color: darkblue;
+    color: rgb(237, 237, 243);
     width: 80%;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: sans-serif;
 }
 .about-image{
       flex-basis: 50%;
@@ -183,19 +195,15 @@ text-transform: uppercase;
 }
 .service-item {
     flex-basis:33.3%;
-    background-color: rgb(100, 1, 124);
-    border-radius: 22px 22px;
+    background-color: rgb(10, 0, 14);
+    border-radius: 32px;
 }
 .service-card{
     width: 100%;
-    border: 3px solid rgb(2, 0, 36) ;
+    
     border-radius: 20px 20px;
 }
-.service-card:hover{
-    background-color: rgb(12, 12, 224);
-    color: black;
 
-}
 .service-card image {
     width: 100%;
 }
@@ -209,10 +217,11 @@ text-transform: uppercase;
     margin-bottom: 6px;
 }
 .card-body p{
-    color: black;
+    color: rgb(245, 239, 239);
     margin: 10px 0;
     padding: 20px;
     border-radius: 22px 22px;
+    
 }
 .card-body a {
     background-color: rgb(3, 3, 41);
@@ -221,31 +230,129 @@ text-transform: uppercase;
     text-align: center;
     padding: 15px 0;
     display: block;
-    margin: 10px 100px;
+    margin: 20px 100px;
     border-radius: 20px;
     font-weight: 500;
 }
 .card-body a:hover{
     transition: ease-in-out 0.3s;
     font-weight: 500;
+    font-size: 1.3rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
-    background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: rgb(34,193,195);
+background: linear-gradient(346deg, rgba(34,193,195,1) 0%, rgba(237,17,69,1) 40%, rgba(45,91,253,1) 100%);
 }
 .footer-heading{
-    margin-top: 60px;
-    color: #000;
-    background-color: rgb(2, 2, 39);
+    margin-top: 40px;
+    color: #eee;
+    background-color: rgb(131,58,180);
     padding-top: 30px;
     display: flexbox;
-    
+    letter-spacing: 2px;
 }
 .footer-heading a{
-display: inline;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  
 }
+.footer-heading p{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.media{
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+     
+}
+.my-image img{
+    margin-bottom: 0;
+    margin-top: 70px;
+    margin-left: 230px;
+    border-radius: 150px / 150px;
+}
+.tiktok{
+    padding-bottom: 15px;
+    margin-left: -8px;
+}
+.contact-map{
+    margin-left: 30px;
+    padding-bottom:10px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.contact-map iframe {
+    border-radius: 10px;
+}
+.contact-session{
     
-.fonter-heading p{
-    padding-left: 30px;
-    justify-content: space-evenly;
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    margin: 50px 0;
+    padding: 20px 0;
+    border-radius: 9px;
+}
+.contact-session h1{
+    color: rgb(245, 239, 239);
+    margin: 20px 0;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.contact-form, .contact-form{
+    flex-basis: 50%;
+    margin-left: 20px;
+}
+
+.input-item {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 25px;
+}
+
+.input-item input{
+    width: 50%;
+    height: 50px;
+    border-radius: 15px;
+    padding-left: 15px;
+    background-color: transparent;
+    border-color:aliceblue;
+}
+
+.input-item input::placeholder {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.message textarea {
+    width: 100%;
+    background-color: transparent;
+    height: 200px;
+    border: 3px solid white;
+}
+
+.btn button{
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color:rgb(19, 19, 77) ;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.message textarea::placeholder{
+    color: rgb(247, 219, 219);
+    font-size: 2.0rem;
+    letter-spacing: 2px;
+    word-spacing: -2px;
+    padding-left: 10px;
+    font-style: italic;
+    font-family:sans-serif;
 }
